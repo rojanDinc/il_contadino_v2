@@ -10,7 +10,7 @@
     "dev:mobile": "webpack serve --host 0.0.0.0",
     "build": "webpack --mode production",
     "serve:build": "http-server ./dist",
-    "deploy": "yarn build && gh-pages"
+    "deploy": "yarn build && gh-pages -d ./dist"
   },
   "keywords": [],
   "author": "",
