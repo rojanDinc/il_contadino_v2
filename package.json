@@ -9,13 +9,15 @@
     "dev": "webpack serve --mode development",
     "dev:mobile": "webpack serve --host 0.0.0.0",
     "build": "webpack --mode production",
-    "serve:build": "http-server ./docs"
+    "serve:build": "http-server ./dist",
+    "deploy": "yarn build && gh-pages"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^5.2.6",
+    "gh-pages": "^3.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
     "http-server": "^0.12.3",
