@@ -24,19 +24,13 @@ const onScroll = () => {
     const yOffset = window.pageYOffset
     const isOffsetPassed = yOffset + 20 > videoOverlay.scrollHeight
     toggleHeaderBackground(isOffsetPassed)
-    if (isOffsetPassed) {
-        elements.forEach((el) => {
-            if (el.classList.value.includes('has-text-white') === true) {
-                el.classList.remove('has-text-white')
-            }
-        })
-    } else {
-        elements.forEach((el) => {
-            if (el.classList.value.includes('has-text-white') === false) {
-                el.classList.add('has-text-white')
-            }
-        })
-    }
+    elements.forEach(el => {
+        if (isOffsetPassed === true && el.classList.value.includes('text-white') === true) {
+            el.classList.remove('text-white')
+        } else if (isOffsetPassed === false && el.classList.value.includes('text-white') === false) {
+            el.classList.add('text-white')
+        }
+    })
 }
 
 const elements = document.querySelectorAll('.nav-item-scroll')
