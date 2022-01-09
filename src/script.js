@@ -1,6 +1,6 @@
 import "./styles.scss";
-import drinksMenu from './static/drinks_menu.png'
-import foodMenu from './static/food_menu_v2.jpeg'
+import drinksMenu from './static/menus/drinks.png'
+import foodMenu from './static/menus/food.jpg'
 
 const setMenuLinks = () => {
     const drinksMenuElement = document.getElementById('menu-drinks')
