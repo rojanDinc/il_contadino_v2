@@ -1,5 +1,5 @@
 import "./styles.scss";
-import drinksMenu from './static/menus/drinks.png'
+import drinksMenu from './static/menus/drinks.jpg'
 import foodMenu from './static/menus/food.jpg'
 
 const setMenuLinks = () => {
